@@ -1,0 +1,32 @@
+.navBar {
+    color: #aaaaaa;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    padding-top: 30px;
+}
+
+.navButton {
+    font-family: Drippy;
+    color: #aaaaaa;
+    text-decoration: none;
+    display: inline-block;
+    background-color: #212121;
+    padding: 14px;
+    border-radius: 7px;
+    transition: 0.3s;
+}
+
+.navButton:hover {
+    background-color: #cfb000;
+    transition: 0.3s;
+    color: white;
+    
+}
+
+.navButton:active {
+    background-color: #4b4000;
+    color: white;
+}
+
+

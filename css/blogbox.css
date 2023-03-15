@@ -1,0 +1,38 @@
+@font-face {
+    font-family: Drippy;
+    src: url(fonts/Drippy.ttf);
+}
+
+@font-face {
+    font-family: BioWeapon;
+    src: url(fonts/BIOWEAPON.ttf);
+}
+
+.blogBox {
+    background-color: #212121;
+    margin: 3% 30% 3% 30%;
+    padding: 30px 30px 30px 30px;
+    border: 2px #cfb000 solid;
+    border-radius: 12px;
+}
+
+.h3Blog {
+    font-family: Drippy;
+    color: #aaaaaa;
+}
+
+li {
+    font-family: Drippy;
+    color: #aaaaaa;
+}
+
+p {
+    margin: 10px auto;
+    font-family: Drippy;
+    color: #aaaaaa;
+}
+
+.dino {
+    text-align: center;
+    font-size: 20px;
+}

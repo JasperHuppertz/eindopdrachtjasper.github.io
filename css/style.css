@@ -1,0 +1,82 @@
+@font-face {
+    font-family: Drippy;
+    src: url(fonts/Drippy.ttf);
+}
+
+@font-face {
+    font-family: BioWeapon;
+    src: url(fonts/BIOWEAPON.ttf);
+}
+
+.body {
+    background-color: rgb(18, 18, 18);
+}
+
+
+.h1Titles {
+    text-shadow: 0 0 0.150em rgb(0, 0, 0);
+    color: #cfb000;
+    letter-spacing: -2px;
+    font-family: BioWeapon;
+    font-weight: 900;
+    font-size: 60px;
+    display: block;
+    background-color: #212121;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-left: 170px;
+    margin-right: 170px;
+    border-radius: 17px;
+    text-align: center;
+    transition: 0.3s;
+    
+}
+
+.h1Titles:hover {
+    text-shadow: 0 0 0.3em rgb(0, 0, 0);
+    cursor:-moz-zoom-out
+    transition: 0.3s;
+}
+
+.h2Titles {
+    font-family: Drippy;
+    color: #aaaaaa;
+    text-align: center;
+    letter-spacing: 1px;
+    
+    
+}
+
+.h3Titles {
+    color: #aaaaaa;
+    letter-spacing: 0px;
+    font-family: Drippy;
+    padding-left: 25px;
+    
+}
+
+.para {
+    font-family: sans-serif;
+    font-weight: 900;
+    color: #aaaaaa;
+    padding-left: 25px;
+    text-align: center;
+}
+
+.footer {
+    color: #aaaaaa;
+    letter-spacing: 0px;
+    font-family: Drippy;
+    font-weight: 500;
+    text-align: center;
+    
+}
+
+.favSongs {
+    letter-spacing: 0px;
+    font-family: Drippy;
+    text-decoration: none;
+    color: #cfb000;
+    margin: 0px;
+    text-align: center;
+}

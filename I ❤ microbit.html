@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+  	<link rel="stylesheet" type="text/css" href="css/buttons.css">
+	<link rel="stylesheet" type="text/css" href="css/banner.css">
+    <link rel="stylesheet" type="text/css" href="css/searchResult.css">
+    <script src="script.js" defer></script>
+	<meta charset="UTF-8">
+	<title>Microbit</title>
+
+</head>
+<body class="body">
+	<header>
+		<div class="banner">
+			<div class="bannerContainer">
+				<h1 class="h1Titles">Cheat sheet</h1>
+				
+            </div>
+		</div>
+		<nav class="navBar">
+			<a class="navButton" href="index.html">Home</a>
+			<a class="navButton" href="projects.html">Eind Project</a>
+			<a class="navButton" href="I ❤ microbit.html">I ❤ microbit</a>
+            <a class="navButton" href="blogpost.html">Blogpost</a>
+		</nav>
+	</header>
+
+	<main>
+		<h2 class="h2Titles">Cheet sheet</h2>
+	</main>
+
+    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+    
+    <ul id="myUL">
+        <li><h3 href="#">Forever</h3><p href="#">De code in deze functie wordt herhaaldelijk uitgevoerd.</p></li>
+        <li><h3 href="#">Show leds</h3><p href="#">Hiermee kan een patroon van LED's op de micro:bit worden getoond.</p></li>
+        <li><h3 href="#">On shake</h3><p href="#">Triggert een gebeurtenis wanneer de micro:bit wordt geschud.</p></li>
+        <li><h3 href="#">Pick randon</h3><p href="#">Hiermee kan een nummer op het LED-display van de micro:bit worden weergegeven.</p></li>
+        <li><h3 href="#">Show number</h3><p href="#">Hiermee kan een willekeurig getal binnen een opgegeven bereik worden gegenereerd.</p></li>
+        <li><h3 href="#">Loops</h3><p href="#">Hiermee kan een stuk code herhaaldelijk worden uitgevoerd.</p></li>
+        <li><h3 href="#">For index</h3><p href="#">Hiermee kan een stuk code een bepaald aantal keren worden herhaald.</p></li>
+        <li><h3 href="#">While</h3><p href="#">Hiermee kan een stuk code worden herhaald totdat een bepaalde voorwaarde is bereikt.</p></li>
+        <li><h3 href="#">Repeat … times</h3><p href="#">Hiermee kan een stuk code een bepaald aantal keren worden herhaald.</p></li>
+        <li><h3 href="#">For element value of</h3><p href="#">Hiermee kan een stuk code worden herhaald voor elk element in een array.</p></li>
+        <li><h3 href="#">Set…to…</h3><p href="#">Hiermee kan de waarde van een variabele worden ingesteld.</p></li>
+        <li><h3 href="#">Array</h3><p href="#">Hiermee kan een verzameling van gegevens van hetzelfde gegevenstype worden gemaakt en beheerd.</p></li>
+        <li><h3 href="#">If</h3><p href="#">Hiermee kan een stuk code worden uitgevoerd als een bepaalde voorwaarde waar is.</p></li>
+        <li><h3 href="#">Else</h3><p href="#">Hiermee kan een stuk code worden uitgevoerd als een bepaalde voorwaarde niet waar is.</p></li>
+        <li><h3 href="#">Else-if</h3><p href="#">Hiermee kan een extra voorwaarde worden toegevoegd die wordt gecontroleerd als de eerste voorwaarde niet waar is.</p></li>
+        <li><h3 href="#">Variablen</h3><p href="#">Hiermee kan een waarde worden opgeslagen en opnieuw worden gebruikt in een programma.</p></li>
+        <li><h3 href="#">Datatypen</h3><p href="#">Dit verwijst naar de verschillende soorten gegevens die in een programma kunnen worden gebruikt, zoals strings, floats, integers, doubles en booleans.</p></li>
+        <li><h3 href="#">String</h3><p href="#">Een data type dat een reeks tekens bevat.</p></li>
+        <li><h3 href="#">Float</h3><p href="#">Een data type dat een decimaal getal bevat.</p></li>
+        <li><h3 href="#">Integer</h3><p href="#">Een data type dat een geheel getal bevat.</p></li>
+        <li><h3 href="#">Double</h3><p href="#">Een data type dat een groot decimaal getal kan bevatten.</p></li>
+        <li><h3 href="#">Boolean</h3><p href="#">Een data type dat alleen de waarden "waar" of "onwaar" kan aannemen.</p></li>
+    </ul>
+
+    <script>
+        function myFunction() {
+        var input, filter, ul, li, p, h3, i, txtValue;
+            input = document.getElementById("myInput");
+            filter = input.value.toUpperCase();
+            ul = document.getElementById("myUL");
+            li = ul.getElementsByTagName("li");
+            for (i = 0; i < li.length; i++) {
+                h3 = li[i].getElementsByTagName("h3")[0];
+                p = li[i].getElementsByTagName("p")[0];
+                txtValue = h3.textContent || h3.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    li[i].style.display = "";
+                    } else {
+                    li[i].style.display = "none";
+                }
+            }
+        }
+    </script>
+
+	<footer class="footer">
+		<p href="#">&copy; Jasper Huppertz, 2023</p>	
+	</footer>
+
+</body>
+
+</html>
